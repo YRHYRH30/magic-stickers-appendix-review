@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>נספח המדבקות MAGIC, אחרי התיקונים</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Heebo,Arial,sans-serif;margin:0;background:#f4f1fb;color:#222;line-height:1.55}
+header{background:#2a1a4a;color:#fff;padding:12px 18px;position:sticky;top:0;z-index:20}
+header .top{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+header h1{margin:0;font-size:20px;flex:1}
+header nav{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+header nav a{font-size:12px;padding:3px 10px;border-radius:999px;text-decoration:none;color:#fff;border:1px solid #fff6;background:#4a3a7a}
+button,a.btn{background:#e8ff3a;color:#111;border:0;border-radius:8px;padding:7px 12px;font:inherit;cursor:pointer;text-decoration:none;display:inline-block}
+button.sec{background:#eee}
+.wrap{max-width:1100px;margin:0 auto;padding:10px 14px 40px}
+.how{background:#fff;border-radius:12px;padding:12px 16px;margin:14px 0;box-shadow:0 2px 12px #2a1a4a14}
+.how p{margin:0 0 6px}
+.dl{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.dl a.btn{background:#2a1a4a;color:#fff;font-size:14px}
+.dl a.btn.l{background:#6a4fb3}
+.meta{font-size:13px;color:#666}
+.card{background:#fff;border-radius:14px;padding:14px 18px 18px;margin:16px 0;box-shadow:0 2px 14px #2a1a4a14;border-right:6px solid #1f7a3a}
+.card.new{border-right-color:#e08a00}
+.card h2{margin:0 0 4px;font-size:20px;color:#2a1a4a;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.badge{font-size:12px;padding:2px 10px;border-radius:999px;color:#fff;background:#1f7a3a}
+.card.new .badge{background:#e08a00}
+.what{margin:2px 0 8px;font-size:16px;color:#333}
+.grid{display:grid;gap:14px;grid-template-columns:1fr 1fr;margin:8px 0}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+.col h3{margin:0 0 5px;font-size:15px}
+.col.o h3{color:#7a1f1f}.col.n h3{color:#1f7a3a}
+.stage{position:relative;cursor:crosshair;display:block;max-width:100%}
+.stage img{display:block;width:100%;height:auto;border-radius:8px;box-shadow:0 2px 10px #0003;background:#eee}
+.pin{position:absolute;transform:translate(50%,-100%);width:26px;height:26px;border-radius:50% 50% 50% 0;background:#e3262b;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:12px;border:2px solid #fff;box-shadow:0 1px 4px #0006;cursor:pointer}
+.removed{display:flex;align-items:center;justify-content:center;min-height:200px;border:3px dashed #1f7a3a;border-radius:10px;color:#1f7a3a;font-size:22px;font-weight:700;background:#f2fbf5;text-align:center;padding:20px}
+textarea{width:100%;font:inherit;border:1px solid #ddd;border-radius:8px;padding:8px;min-height:60px;background:#fafafa;resize:vertical}
+.pinlist .item{border-bottom:1px solid #eee;padding:6px 0}
+.pinlist b{color:#e3262b}
+.pinlist textarea{min-height:44px;margin-top:4px}
+.pinlist .del{float:left;padding:1px 8px;background:#fee;color:#a00}
+.done-wrap{text-align:center;padding:22px 12px 50px}
+#done{font-size:24px;padding:16px 44px;background:#e3262b;color:#fff;border-radius:12px;font-weight:700}
+#doneMsg{margin-top:12px;font-size:15px}
+</style></head><body>
+<header><div class="top"><h1>נספח המדבקות MAGIC, אחרי התיקונים</h1>
+<button id="cp" class="sec">העתקת הערות</button></div>
+<nav id="nav"></nav></header>
+<div class="wrap">
+<div class="how"><p><b>איך זה עובד:</b> לכל עמוד רואים את הלפני ואת האחרי. לחצו על התמונה כדי לסמן מקום ולכתוב הערה, ובסיום לחצו על «סיימתי תיקונים».</p>
+<p class="meta">מוצגת המהדורה החרדית. המהדורה הכללית זהה, פרט לכיפה.</p>
+<div class="dl"><a class="btn" href="files/MAGIC_stickers_appendix_haredi_light.pdf" download>הקובץ – חרדי</a><a class="btn" href="files/MAGIC_stickers_appendix_general_light.pdf" download>הקובץ – כללי</a><a class="btn l" href="files/MAGIC_stickers_appendix_haredi.pdf" download>חרדי, איכות הדפסה</a><a class="btn l" href="files/MAGIC_stickers_appendix_general.pdf" download>כללי, איכות הדפסה</a></div></div>
+<div id="secs"></div>
+<div class="done-wrap"><button id="done">✅ סיימתי תיקונים</button><div id="doneMsg"></div></div>
+</div>
+<script>
+var SECS=[{"id": "S1", "nav": "S1", "title": "S1 · צעצועים", "what": "תיקנו: הצעצועים הוקטנו לגודל 2×2 ס״מ, כדי שייכנסו בלב.", "orig": [{"id": "b1", "label": "לפני"}], "fixed": [{"id": "a1", "label": "אחרי"}]}, {"id": "S2", "nav": "S2", "title": "S2 · רכבת אדומה", "what": "תיקנו: הרכבת הוסרה, ונוספה מדבקת בן.", "orig": [{"id": "b2", "label": "לפני"}], "fixed": [{"id": "a2", "label": "אחרי"}]}, {"id": "S3", "nav": "S3", "title": "S3 · משפחה", "what": "תיקנו: כל דמות מחזיקה את הצעצוע שלה, ונשארו רק הדמויות.", "orig": [{"id": "b3", "label": "לפני"}], "fixed": [{"id": "a3", "label": "אחרי"}]}, {"id": "S4", "nav": "S4", "title": "S4 · בלונים", "what": "תיקנו: לכל בלון יש חיתוך בצורת הבלון.", "orig": [{"id": "b4", "label": "לפני"}], "fixed": [{"id": "a4", "label": "אחרי"}]}, {"id": "S5", "nav": "S5", "title": "S5 · בגדים נקיים ומלוכלכים", "what": "תיקנו: שלושה בגדים מלוכלכים ושלושה נקיים, קצת יותר קטנים.", "orig": [{"id": "b5", "label": "לפני"}], "fixed": [{"id": "a5", "label": "אחרי"}]}, {"id": "S6", "nav": "S6", "title": "S6 · דובים", "what": "עמוד חדש: עמוד הדובים, עם ריבוע ריק ליד דובי התינוק.", "isnew": true, "orig": [], "fixed": [{"id": "a6", "label": "העמוד החדש"}]}, {"id": "S7", "nav": "S7", "title": "S7 · מסכה (אברי פנים)", "what": "תיקנו: פה עצוב, עיניים בזוגות שונים ואף במקום השפם.", "orig": [{"id": "b7", "label": "לפני"}], "fixed": [{"id": "a7", "label": "אחרי"}]}, {"id": "S8", "nav": "S8", "title": "S8 · גן חיות", "what": "תיקנו: החיות הוקטנו לגודל התיבות בעמוד גן החיות.", "orig": [{"id": "b8", "label": "לפני"}], "fixed": [{"id": "a8", "label": "אחרי"}]}, {"id": "S9", "nav": "S9", "title": "S9 · אוהב / לא אוהב", "what": "תיקנו: העמוד הוסר.", "orig": [{"id": "b9", "label": "לפני"}], "fixed": [], "removed": true}, {"id": "S14", "nav": "עמוד חדש", "title": "עמוד חדש · בגדי חיות", "what": "עמוד חדש: שש הדמויות מעמוד 29 כמדבקות על רקע לבן.", "isnew": true, "orig": [{"id": "p29", "label": "עמוד 29 בחוברת"}], "fixed": [{"id": "a10", "label": "העמוד החדש"}]}], SRC={"a4": "img/a4.jpg", "b3": "img/b3.jpg", "b8": "img/b8.jpg", "b1": "img/b1.jpg", "b2": "img/b2.jpg", "a7": "img/a7.jpg", "a8": "img/a8.jpg", "p29": "img/p29.jpg", "b9": "img/b9.jpg", "a10": "img/a10.jpg", "a5": "img/a5.jpg", "b4": "img/b4.jpg", "a1": "img/a1.jpg", "b5": "img/b5.jpg", "a3": "img/a3.jpg", "b7": "img/b7.jpg", "a6": "img/a6.jpg", "a2": "img/a2.jpg"}, KEY='magic-appendix-yael-client-pins', TITLE='הערות על נספח המדבקות MAGIC';
+var ST; try{ST=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){ST={}}
+ST.pins=ST.pins||[]; ST.notes=ST.notes||{};
+function save(){localStorage.setItem(KEY,JSON.stringify(ST))}
+var LABEL={}; SECS.forEach(function(s){['orig','fixed'].forEach(function(l){(s[l]||[]).forEach(function(i){LABEL[i.id]=i.label})})});
+function esc(t){return String(t).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+function stage(i,cls){return '<div class="col '+cls+'"><h3>'+esc(i.label)+'</h3><div class="stage" data-img="'+i.id+'"><img src="'+SRC[i.id]+'" alt="'+esc(i.label)+'"></div></div>'}
+var nav=document.getElementById('nav'), host=document.getElementById('secs');
+SECS.forEach(function(s){
+  var a=document.createElement('a');a.href='#sec-'+s.id;a.textContent=s.nav;nav.appendChild(a);
+  var c=document.createElement('section');c.className='card '+(s.isnew?'new':'');c.id='sec-'+s.id;
+  var h='<h2>'+esc(s.title)+' <span class="badge">'+(s.isnew?'חדש':'תוקן')+'</span></h2><p class="what">'+esc(s.what)+'</p>';
+  h+='<div class="grid">'+s.orig.map(function(i){return stage(i,'o')}).join('')+(s.removed?'<div class="col n"><h3>אחרי</h3><div class="removed">העמוד הוסר</div></div>':s.fixed.map(function(i){return stage(i,'n')}).join(''))+'</div>';
+  h+='<div class="pinlist" id="pl-'+s.id+'"></div><textarea id="tx-'+s.id+'" placeholder="הערה לעמוד הזה…"></textarea>';
+  c.innerHTML=h;host.appendChild(c);
+  var ta=c.querySelector('#tx-'+s.id);ta.value=ST.notes[s.id]||'';ta.oninput=function(){ST.notes[s.id]=ta.value;save()};
+});
+function secOf(imgId){for(var k=0;k<SECS.length;k++){var s=SECS[k];for(var l of ['orig','fixed'])for(var i of (s[l]||[]))if(i.id==imgId)return s.id}}
+function draw(){
+  document.querySelectorAll('.pin').forEach(function(e){e.remove()});
+  SECS.forEach(function(s){var L=document.getElementById('pl-'+s.id);L.innerHTML='';var n=0;
+    ST.pins.forEach(function(p,idx){if(p.sec!=s.id)return;n++;var num=n;
+      var stg=document.querySelector('.stage[data-img="'+p.img+'"]');
+      if(stg){var pin=document.createElement('div');pin.className='pin';pin.textContent=num;pin.style.left='calc('+p.x+'% - 26px)';pin.style.top=p.y+'%';
+        pin.onclick=function(e){e.stopPropagation();var t=L.querySelector('[data-i="'+idx+'"] textarea');if(t)t.focus()};stg.appendChild(pin)}
+      var d=document.createElement('div');d.className='item';d.setAttribute('data-i',idx);
+      d.innerHTML='<b>#'+num+'</b> <span class="meta">'+esc(LABEL[p.img]||p.img)+'</span> <button type="button" class="del">✕</button><textarea placeholder="כתבו הערה…"></textarea>';
+      var t=d.querySelector('textarea');t.value=p.c||'';t.oninput=function(){p.c=t.value;save()};
+      d.querySelector('.del').onclick=function(){if(confirm('למחוק את הסיכה?')){ST.pins.splice(idx,1);save();draw()}};L.appendChild(d)})})}
+document.querySelectorAll('.stage').forEach(function(stg){stg.addEventListener('click',function(e){
+  if(e.target.classList.contains('pin'))return;var im=stg.querySelector('img'),r=im.getBoundingClientRect();
+  var x=+((e.clientX-r.left)/r.width*100).toFixed(1),y=+((e.clientY-r.top)/r.height*100).toFixed(1);if(x<0||y<0||x>100||y>100)return;
+  var id=stg.getAttribute('data-img');ST.pins.push({sec:secOf(id),img:id,x:x,y:y,c:'',t:new Date().toISOString()});save();draw();
+  var L=document.getElementById('pl-'+secOf(id));var t=L.lastChild&&L.lastChild.querySelector('textarea');if(t)t.focus()})});
+function summary(){
+  var out=[TITLE,''],any=false;
+  SECS.forEach(function(s){var note=(ST.notes[s.id]||'').trim(),pins=ST.pins.filter(function(p){return p.sec==s.id});
+    if(!note&&!pins.length)return;any=true;out.push('== '+s.title+' ==');
+    if(note)out.push('הערה: '+note);
+    pins.forEach(function(p,i){out.push('#'+(i+1)+' ['+(LABEL[p.img]||p.img)+'] (x '+p.x+'%, y '+p.y+'%): '+(p.c||''))});out.push('')});
+  if(!any)out.push('(אין הערות)');return out.join('\n')}
+function doCopy(){var t=summary();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){alert('הועתק')}).catch(function(){prompt('העתיקו ידנית:',t)})}
+document.getElementById('cp').onclick=doCopy;
+document.getElementById('done').onclick=function(){var m=document.getElementById('doneMsg');var t=summary();
+  if(t.indexOf('(אין הערות)')>=0){m.style.color='#c00';m.textContent='אין עדיין הערות. הוסיפו סיכה או הערה ולחצו שוב.';return}
+  m.style.color='#080';m.textContent='פותח וואטסאפ עם ההערות… (אם ההודעה ארוכה מדי, השתמשו ב«העתקת הערות»)';
+  window.open('https://wa.me/972559189249?text='+encodeURIComponent(t),'_blank')};
+draw();
+</script></body></html>
